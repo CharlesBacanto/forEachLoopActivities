@@ -3,8 +3,8 @@
     static void Main(string[] args)
     {   
         //Each names in an array
-        string[] userNames = { "Giyu", "Tanjiro", "Nezuko", "Inosuke", "Zenitsu" }; // Array of userNames
-        Console.Write("Please enter a name to find: ");// Prompt the user a name to be found
+        string[] userNames = { "Deku", "Bakugo", "Toga", "Shigaraki", "Dabi" }; // Array of userNames
+        Console.Write("Please enter a MHA Character to find: ");// Prompt the user a name to be found
         string findName = Console.ReadLine(); //Fetch the name
         
         foreach(string name in userNames)
@@ -16,6 +16,7 @@
             }
             
         }
+        Console.WriteLine("\n");
 
 
         //Each Letter in a Word
@@ -31,16 +32,17 @@
                 charcount++;
             }
         }
-        Console.WriteLine(charcount);// Print out total of characters founded in the word
+        Console.WriteLine("Total of letters found in the word: "+charcount+"\n");// Print out total of characters founded in the word
+       
 
         //Array of Integers Summation
         int sum=0;// Initial Value of Total
 
-        int[] valuesArray = { 1, 2, 3 }; // Array of Values 
-
-        foreach(int i in valuesArray)// For Each Value in the Array it would be added to the sum
+        int[] valuesArray = { 6, 4, 2 }; // Array of Values 
+        Console.WriteLine("Array values: ");
+        foreach (int i in valuesArray)// For Each Value in the Array it would be added to the sum
         {
-            
+            Console.WriteLine(i);
             sum += i;
 
         }
